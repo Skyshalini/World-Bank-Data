@@ -1,74 +1,44 @@
-# World-Bank-Data
+# World Bank Data Visualisation
 
-This dataset helps you to increase the data-cleaning process using the pure Python pandas library.
-Columns :
--Age
--Salary
--Rating 
--Location
--Established
--Easy Apply
+## Objective:
+The primary objective of this project is to analyze and visualize World Bank data using the Pandas library in Python. The World Bank provides a wealth of socio-economic indicators for countries around the globe, and this project aims to create meaningful visualizations to gain insights into global trends and patterns.
 
-Here are some questions that has been answered to perform data cleaning and manipulation using the given dataset..
-1. Missing Values:
-Question: Are there any missing values in the dataset, and if so, how should they be handled for each indicator? 
+## Technologies Used:
+* Python: Utilize Python programming language for data manipulation, analysis, and visualization.
+* Pandas: Leverage the Pandas library for data cleaning and analysis.
+* Matplotlib and Seaborn: Use these libraries for static visualizations.
+* Plotly: Employ Plotly for interactive and dynamic visualizations.
+* Jupyter Notebooks: Develop and present the analysis in Jupyter Notebooks for a more interactive and user-friendly experience.
 
+## Dataset Information:
+* Life expectancy at birth: The number of years a newborn would live if the patterns of mortality at the time of birth remain the same throughout his life.
+* Fertility rate: Number of children a woman would give birth to during her childbearing years.
+* Country population: Total number of residents regardless of legal status or citizenship (midyear estimates).
+  
+Hans Rosling built this animation, after testing his students on global health, he realized that they still thought that the world was divided in two:
+* The Western world: low fertility rate and high life expectancy.
+* The third world: high fertility rate and low life expectancy.
+  
+The following steps were performed to build animated visualization: 
+1. Load Data
+2. Data Overview
+3. Handle Missing Values
+4. Data Types
+5. Merge DataFrames (If required for any visualization).
 
-2. Data Types:
-Question: What are the data types of each indicator, and do they align with their expected types (e.g., numerical, categorical)?
-
-
-3. Outliers:
-Question: Identify potential outliers in numerical indicators (e.g., Age, Salary, Rating). Should outliers be removed or adjusted?
-
-
-4. Salary Formatting:
-Question: Examine the format of the Salary column. Does it require any formatting or standardization for consistent analysis?
-
-
-5. Location Standardization:
-Question: Check the consistency of location entries. Do they need standardization, and how can this be achieved?
-
-
-6. Established Column:
-Question: Explore the Established column. Are there any inconsistencies or anomalies that need to be addressed?
-
-
+The visualization graph made is: 
+* Population Trends (Years vs Population)(Line Graph)
+* Fertility rate distribution 
+* Life expectancy variation
+* Correlation Analysis
+* Regional Analysis
 
 
 
 
-7. Easy Apply Indicator:
-Question: Analyze the Easy Apply column. Does it contain boolean values or need transformation for better analysis?
 
-
-8. Rating Range:
-Question: Investigate the range of values in the Rating column. Does it fall within expected rating scales, and how should outliers be treated?
-
-
-9. Age Distribution:
-Question: Check the distribution of values in the Age column. Are there any unusual entries, and how might they impact analysis?
-
-
-10. Handling Special Characters:
-Question: Examine all text-based columns (e.g., Location). Are there special characters or inconsistencies that need cleaning?
-
-
-11. Data Integrity:
-Question: Ensure data integrity by cross-referencing entries. For instance, does the Established column align with the Age column?
-
-
-12. Easy Apply Transformation:
-Question: If the Easy Apply column contains non-boolean values, how can it be transformed into a usable format?
-
-
-13. Location Accuracy:
-Question: Assess the accuracy of location entries. Are there misspelled or ambiguous locations that require correction?
-
-
-14. Handling Categorical Data:
-Question: For categorical indicators, consider encoding or transforming them into a format suitable for analysis.
-
-
-15. Consistent Rating Scale:
-Question: Ensure a consistent rating scale in the Rating column. Should it be normalized or adjusted for uniform analysis?
+Hint: 
+1. Load all three datasets 
+2. Data preprocessing on each dataset
+3. Use the Pandas dataset merge method (DataFrame.merge) to combine the 3 datasets
+4. Create a list of continents with their counties and then use if else to create a new column for each continent. 
